@@ -52,7 +52,7 @@ persistent_xss = True
 
 [audit.ssl_certificate]
 minExpireDays = 30
-caFileName = plugins/audit/ssl_certificate/ca.pem
+caFileName = %ROOT_PATH%/plugins/audit/ssl_certificate/ca.pem
 
 [audit.xst]
 
@@ -73,8 +73,8 @@ use_w3af_site = True
 [crawl.spider_man]
 
 [bruteforce.basic_auth]
-usersFile = core/controllers/bruteforce/users.txt
-passwdFile = core/controllers/bruteforce/passwords.txt
+usersFile = %ROOT_PATH%/core/controllers/bruteforce/users.txt
+passwdFile = %ROOT_PATH%/core/controllers/bruteforce/passwords.txt
 useSvnUsers = True
 stopOnFirst = True
 passEqUser = True
@@ -151,8 +151,6 @@ only_target_domain = True
 
 [grep.strange_reason]
 
-[grep.ajax]
-
 [grep.strange_headers]
 
 [grep.ssn]
@@ -179,7 +177,7 @@ non_targets =
 msf_location = /opt/metasploit3/bin/
 
 [http-settings]
-timeout = 10
+timeout = 0
 headers_file = 
 basic_auth_user = 
 basic_auth_passwd = 

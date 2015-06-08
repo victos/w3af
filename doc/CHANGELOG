@@ -1,3 +1,47 @@
+(26 Feb 2015)    Version 1.6.45
+===============================
+Github tag: https://github.com/andresriancho/w3af/tree/1.6.45
+Github milestone: https://github.com/andresriancho/w3af/issues?milestone=10
+
+* HTTP response parsers are now run in a different process
+* Added support for SSL's SNI using OpenSSL
+* Added support for scanning servers with specific SSL protocols disabled (poodle)
+* Added new platforms to the dependency check
+* Updated sqlmap
+* Performance improvements in core classes
+* Improved profiling capabilities (internal use only)
+* Improved exception handling to catch more descriptive tracebacks
+* Added new plugins for web sockets and RFD
+* Better error handling for HTTP requests
+* Huge reducion of memory usage in phishtank plugin 
+
+(12 Jun 2014)    Version 1.6.0.3
+================================
+Github tag: https://github.com/andresriancho/w3af/tree/1.6.0.3
+Github milestone: https://github.com/andresriancho/w3af/issues?milestone=10
+
+* Fixed HTML plugin #2880
+* Improved dependency checks #2766 #2703
+* Fixed bug in user_dir plugin #2445
+* Improved dependency check help for installation in CentOS 6.5 #2067
+
+(05 May 2014)    Version 1.6.0.2
+================================
+Github tag: https://github.com/andresriancho/w3af/tree/1.6.0.2
+Github milestone: https://github.com/andresriancho/w3af/issues?milestone=10
+
+* Fixing Kali packaging bugs in our code
+* Minor performance enhancements and code cleanups
+
+(31 Mar 2014)    Version 1.6
+============================
+Github tag: https://github.com/andresriancho/w3af/tree/1.6
+Github milestone: https://github.com/andresriancho/w3af/issues?milestone=7
+
+* The core and plugins now use the producer/consumer model: Faster scans.
+* "import w3af": Easily embed w3af in other python tools
+* Running +1300 unittests on each push to the repository: Stability
+
 (10 Nov 2011)    1.1
 ====================
 

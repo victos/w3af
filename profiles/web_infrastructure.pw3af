@@ -28,7 +28,7 @@ msf_location = /opt/metasploit3/bin/
 [infrastructure.halberd]
 
 [infrastructure.hmap]
-genFpF = False
+gen_fingerprint = False
 
 [infrastructure.afd]
 
@@ -45,7 +45,7 @@ max_http_retries = 2
 ntlm_auth_user = 
 ntlm_auth_passwd = 
 ignore_session_cookies = False
-timeout = 10
+timeout = 0
 user_agent = w3af.org
 basic_auth_user = 
 basic_auth_passwd = 

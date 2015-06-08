@@ -80,7 +80,7 @@ only_forward = False
 
 [audit.ssl_certificate]
 minExpireDays = 30
-caFileName = plugins/audit/ssl_certificate/ca.pem
+caFileName = %ROOT_PATH%/plugins/audit/ssl_certificate/ca.pem
 
 [audit.os_commanding]
 
@@ -118,8 +118,6 @@ diff_ratio = 0.35
 
 [grep.file_upload]
 
-[grep.ajax]
-
 [infrastructure.fingerprint_WAF]
 
 [grep.error_500]
@@ -133,11 +131,9 @@ diff_ratio = 0.35
 [grep.objects]
 
 [infrastructure.hmap]
-genFpF = False
+gen_fingerprint = False
 
 [crawl.user_dir]
-identify_os = True
-identify_apps = True
 
 [audit.htaccess_methods]
 
@@ -216,7 +212,7 @@ max_http_retries = 2
 ntlm_auth_user = 
 ntlm_auth_passwd = 
 ignore_session_cookies = False
-timeout = 10
+timeout = 0
 user_agent = w3af.org
 basic_auth_user = 
 basic_auth_passwd = 
